@@ -4,30 +4,43 @@ html {
     scroll-behavior: smooth;
 }
 
-.topnav {
+body {
+    margin: 0;
     font-family: Verdana, sans-serif;
-    overflow: hidden;
+}
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     background-color: darkgreen;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items: left;
+    padding-bottom: 15px;
+    padding-top:15px;
 }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;;
-  font-size: 20px;
+.navbar a {
+    color:white;
+    font-size: 18px;
+    padding: 15px;
+    gap: 20px;
+    list-style: none;
+    font-weight: bold;
+    transition: color 0.1s ease, background-color 0.1s ease;
 }
 
-.topnav a:hover {
-    background-color: green;
+.navbar a:hover {
     color: black;
+    background-color: lightgreen;
+
 }
 
-.topnav a:active {
-    background-color: white;
-    color: black;
-}
+
 
 
 .circle-img {
@@ -43,10 +56,6 @@ html {
     transition: outline 0.1s ease;
 }
 
-.circle-img:hover {
-    outline: 5px solid darkgreen;
-}
-
 .description h1 {
     text-align: center;
     font-size: 50px;
@@ -55,7 +64,9 @@ html {
 }
 .description p {
     text-align: center;
-    font-size: 22px;
+    font-size: 30px;
+    padding-left:8%;
+    padding-right:8%;
 }
 
 .highlight {
