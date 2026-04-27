@@ -1,6 +1,6 @@
 html {
     font-family: Verdana, sans-serif;
-    background-color: lightsteelblue;
+    background-color: lightgray;
     scroll-behavior: smooth;
 }
 
@@ -61,7 +61,6 @@ html {
 .highlight {
     font-weight: bold;
     transition: color 0.1s ease;
-    cursor: pointer;
 }
 
 .highlight:hover {
