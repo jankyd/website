@@ -1,13 +1,22 @@
 html {
     font-family: Verdana, sans-serif;
-    background-color: lightgray;
+    background-color: #2C2C2C;
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdanda, sans-serif;
+    background-color: #2C2C2C;
+    scroll-behavior: smooth;
+    color: lightgray;
+    text-align: center;
 }
 
 .topnav {
     font-family: Verdana, sans-serif;
     overflow: hidden;
     background-color: darkgreen;
+    border-radius: 10px;
 }
 
 .topnav a {
@@ -39,7 +48,7 @@ html {
     margin-right: auto;
     margin-top: 20px;
     object-fit: cover;
-    outline: 5px solid rgb(60, 60, 60);
+    outline: 5px solid lightblue;
     transition: outline 0.1s ease;
 }
 
@@ -50,12 +59,13 @@ html {
 .description h1 {
     text-align: center;
     font-size: 50px;
-    color: black;
+    color: white;
 
 }
 .description p {
     text-align: center;
     font-size: 22px;
+    color: lightgrey;
 }
 
 .highlight {
@@ -64,6 +74,38 @@ html {
 }
 
 .highlight:hover {
-    color: darkgreen;
+    color: lightgreen;
 }
+
+.projects-header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: lightgray;
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    padding-bottom: 500px; /* TODO: REMOVE! Used for scroll testing*/
+}
+
+.project-grid > div {
+    border: 2px solid lightblue;
+    border-radius: 10px;
+}
+
+.project-grid h2, a:link, a:visited {
+    text-align: center;
+    color: lightgray;
+}
+
+.project-grid a:hover{
+    color: lightblue;
+}
+
+
 
