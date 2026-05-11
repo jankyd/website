@@ -14,7 +14,14 @@ body {
 
 .topnav {
     font-family: Verdana, sans-serif;
-    overflow: hidden;
+}
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     background-color: darkgreen;
     border-radius: 10px;
 }
@@ -31,12 +38,11 @@ body {
 .topnav a:hover {
     background-color: green;
     color: black;
+    background-color: lightgreen;
+
 }
 
-.topnav a:active {
-    background-color: white;
-    color: black;
-}
+
 
 
 .circle-img {
@@ -50,10 +56,6 @@ body {
     object-fit: cover;
     outline: 5px solid lightblue;
     transition: outline 0.1s ease;
-}
-
-.circle-img:hover {
-    outline: 5px solid darkgreen;
 }
 
 .description h1 {
