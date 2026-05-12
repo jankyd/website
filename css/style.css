@@ -34,6 +34,8 @@ body {
   padding: 5px 16px;
   text-decoration: none;
   font-size: 20px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  
 }
 
 .navbar a:hover {
@@ -55,8 +57,12 @@ body {
     margin-right: auto;
     margin-top: 20px;
     object-fit: cover;
-    outline: 5px solid lightblue;
+    outline: 5px groove darkcyan;
     transition: outline 0.1s ease;
+}
+
+.circle-img:hover {
+    outline: 5px ridge darkgreen;
 }
 
 .description h1 {
@@ -97,7 +103,7 @@ body {
 }
 
 .project-grid > div {
-    border: 2px solid lightblue;
+    border: 3px solid lightblue;
     border-radius: 10px;
 }
 
@@ -106,8 +112,14 @@ body {
     color: lightgray;
 }
 
-.project-grid a:hover{
+.project-grid a:hover {
     color: lightblue;
+}
+
+.cdda-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 
