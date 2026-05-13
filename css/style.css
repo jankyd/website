@@ -16,7 +16,6 @@ body {
     font-family: Verdana, sans-serif;
 }
 
-/*FIXME: isn't sticky and looks like doodoo */
 .navbar {
     display: flex;
     align-items: center;
@@ -75,6 +74,8 @@ body {
     text-align: center;
     font-size: 22px;
     color: lightgrey;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .highlight {
@@ -99,7 +100,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
-    padding-bottom: 500px; /* TODO: REMOVE! Used for scroll testing*/
 }
 
 .project-grid > div {
@@ -116,10 +116,73 @@ body {
     color: lightblue;
 }
 
-.cdda-img {
-    max-width: 100%;
+.project-grid p {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.project-img {
+    max-width: 60%;
+    max-height: 80%;
     height: auto;
-    display: block;
+    justify-content: center;
+}
+
+.contactMe {
+    padding-top: 25px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 75%;
+}
+
+.formObject {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4a90e2;
+    border: 3px;
+    box-shadow: 0 0 0 3px darkcyan;
+}
+
+textarea {
+    resize: vertical;
+    font-family: Verdana, sans-serif;
+}
+
+button[type="submit"] {
+    padding: .5rem;
+    background-color: darkgray;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-size: large;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: darkgreen;
+    color: white;
+
 }
 
 

@@ -8,7 +8,8 @@
 </head>
 
 <body>
-    <header id="top" style="position: sticky; top: 5px">
+    <span id="top" style="padding: 0;"></span>
+    <header style="position: sticky; top: 5px">
         <nav class="navbar">
             <a href="#top">Home</a>
             <a href="#projects">Projects</a>
@@ -22,24 +23,63 @@
         <p style="padding-bottom: 20px">
             Hello! I'm <span class="highlight" href="#top">Jack Dodge</span>, a 
             gradudate of the University of Wisconsin-Madison with a Bachelor's degree 
-            in Computer Science and Scandinavian Studies. Feel free to take a look around. &#x1F60A 
+            in Computer Science and Scandinavian Studies. Feel free to take a look around.
+            Just know I'm not a UX designer, I'm much better at making things run rather
+            than making them look good &#128579
         </p>
     </div>
 
-    <div><h1 class="projects-header" id="projects">Projects</h1></div>
+    <div id="projects"><h1 class="projects-header">Personal Projects</h1></div>
     <div class="project-grid">
         <div>
             <h2><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank">Cataclysm: Dark Days Ahead</a></h2>
-            <img src="img/CDDA.png" class="cdda-img">
+            <img src="img/CDDA.png" class="project-img">
             <p>
                 An open source video game project built with C++ & JSON.
                 My contributions include bugfixes to close issues on GitHub.
             </p>
         </div>
-        <div><h2>Giga Sleeper</h2></div>
+        <div>
+            <h2><a href="https://github.com/jankyd/Img-to-Ascii" target="_blank">Img-To-Ascii</a></h2>
+            <img style="max-width: 80%;" src="img/GHAscii.png" class="project-img"/>
+            <p>
+                A value (pixel brightness) based image to ascii conversion tool.
+                I may implement shape based conversion at some point to improve contrast issues,
+                though that is out of scope at the moment.
+            </p>
+        </div>
         <div><p></p></div>
         <div><p></p></div>
     </div>
+    
+    <div class="contactMe">
+        <h1 id="contact">Contact Me</h1>
+        <p>Please use for professional contact only, I have a API call rate limit :)</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="formObject">
+                <input type="hidden" name="access_key" value="2661c63d-e046-417f-9d42-37af349453db">
+            </div>
+            <div class="formObject">
+                <label for="name">Your Name</label>
+                <input id="name" type="text" name="name" required>
+            </div>
+            <div class="formObject">
+                <label for="email">Your Email</label>
+                <input id="email" type="email" name="email" required>
+            </div>
+            <div class="formObject">
+                <label for="message">Message to me</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p style="font-size: smaller">
+            NOTE: Please 
+        </p>
+    </footer>
 </main>
 </body>
 </html>
